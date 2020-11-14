@@ -82,7 +82,7 @@ else:
 
 distance = int(input("введите растояние которое бегун пробегает в 1-й день в км: "))
 target = int(input("введите цель в км: "))
-day = 0
+day = 1
 while distance < target:
     distance = distance + distance * 0.1
     day += 1
