@@ -1,4 +1,4 @@
-#урок 4 задание 1
+#урок 4 задание 1_1
 
 from sys import argv
 
@@ -12,23 +12,23 @@ try:
 except ValueError:
     print('Not a number')
 
-#урок 4 задание 2
+#урок 4 задание 2_1
 
 my_list = [46, 35, 98, 1, 146, 93, 7, 18]
 my_new_list = [el for num, el in enumerate(my_list) if my_list[num - 1] < my_list[num]]
 print(f'Исходный список {my_list}')
 print(f'Новый список {my_new_list}')
 
-# урок 4 задание 3
+# урок 4 задание 3_1
 print(f'Числа от 20 до 240 кратные 20 или 21 - {[el for el in range(20, 241) if el % 20 == 0 or el % 21 == 0]}')
 
-#урок 4 задание 4
+#урок 4 задание 4_1
 
 my_list = [1, 4, 4, 2, 3, 2, 8, 10, 8, 5]
 my_new_list = [el for el in my_list if my_list.count(el) < 2]
 print(my_new_list)
 
-#урок 4 задание 5
+#урок 4 задание 5_1
 
 from functools import reduce
 def my_func(el_p, el):
@@ -36,7 +36,7 @@ def my_func(el_p, el):
 print(f'Список четных значений {[el for el in range(99, 1001) if el % 2 == 0]}')
 print(f'Результат перемножения всех элементов списка {reduce(my_func, [el for el in range(99, 1001) if el % 2 == 0])}')
 
-#урок 4 задание 6
+#урок 4 задание 6_1
 
 # from itertools import count
 # for el in count(int(input('Введите стартовое число '))):
@@ -46,7 +46,7 @@ print(f'Результат перемножения всех элементов 
 # for el in cycle(my_list):
 #     print(el) # беконечный цикл!
 
-#урок 4 задание 7
+#урок 4 задание 7_1
 
 from itertools import count
 from math import factorial
